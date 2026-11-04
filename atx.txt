@@ -1,0 +1,27 @@
+# 1. Entre na pasta onde estão os arquivos do projeto (ajuste o caminho se necessário)
+
+cd /storage/emulated/0/Download/Painelatx/
+
+# 2. Cria o README
+echo "# Painelatx" >> README.md
+
+# 3. 🚨 PROTEÇÃO DE SENHAS (Cria o .gitignore para não vazar configs)
+echo -e "config.php\n.env\ndatabase.sql\n*.bak\nbackups/\nuploads/" > .gitignore
+
+# 4. Inicia o git
+git init
+
+# 5. Adiciona TODOS os arquivos (exceto os protegidos pelo .gitignore)
+git add .
+
+# 6. Faz o commit
+git commit -m "first commit"
+
+# 7. Renomeia a branch para main
+git branch -M main
+
+# 8. Conecta ao repositório do GitHub
+git remote add origin https://github.com/cybercoari79/Painelatx.git
+
+# 9. Envia para o GitHub
+git push -u origin main

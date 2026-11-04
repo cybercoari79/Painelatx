@@ -1,0 +1,7 @@
+.git-credentials
+config.php
+database.sql
+.env
+*.bak
+backups/
+uploads/

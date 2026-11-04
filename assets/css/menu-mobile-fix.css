@@ -1,0 +1,14 @@
+/* ATX Standalone: correção do menu lateral no celular */
+.sidebar-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:999; }
+.sidebar-overlay.active { display:block; }
+.sidebar { z-index:1000; }
+.sidebar-brand .menu-toggle { display:none; }
+.header .menu-toggle-mobile { display:none; }
+@media (max-width: 800px) {
+  .sidebar { transform:translateX(-100%); left:0; top:0; bottom:0; height:100vh; width:250px; }
+  .sidebar.open { transform:translateX(0); }
+  .main-content { margin-left:0 !important; width:100%; }
+  .header { margin-left:0 !important; }
+  .header .menu-toggle-mobile { display:inline-block; }
+  .sidebar-brand .menu-toggle { display:inline-block; }
+}
